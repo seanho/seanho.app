@@ -20,6 +20,7 @@ body > header, body > footer, .app {
   height: 14.2857vh;
   min-height: 65px;
   width: vw;
+  padding: 0 1em;
 }
 
 .column {
@@ -34,7 +35,6 @@ body > header, body > footer, .app {
 
 .app {
   color: white;
-  padding: 0 1em;
   border-top: 1px solid #f3f3f3;
 }
 
