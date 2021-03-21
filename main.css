@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  letter-spacing: 0.09em;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+a, a:visited { 
+  color: inherit;
+  text-decoration: none;
+}
+
+body > header, body > footer, .app {
+  height: 14.2857vh;
+  min-height: 65px;
+  width: vw;
+}
+
+.column {
+  height: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app {
+  color: white;
+  padding: 0 1em;
+  border-top: 1px solid #f3f3f3;
+}
+
+.app:last-child {
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.app h2 {
+  margin: 0;
+	padding: 0;
+  position: relative;
+}
+
+.app-2cents h2 {
+  background: linear-gradient(to bottom, #16F54E, #3FD1FF);
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.app-graphite h2 {
+  background: -webkit-radial-gradient(top left, ellipse, #FF008Dcc 0%, transparent), linear-gradient(to bottom, #2e3538, #033649); 
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.app-rocketweather h2 {
+  background: linear-gradient(to bottom, #FFF854, #FFC554cc 15%, #FF1F00);
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.app-graphite h2::after, .app-rocketweather h2::after {
+  content: "Coming Soon";
+  -webkit-text-fill-color: black;
+  font-size: 0.3em;
+  font-weight: 300;
+  position: absolute;
+  top: 107%;
+  left: 2px;
+}
+
+.app-dynamicfont h2 {
+  background: linear-gradient(5deg, #036564, #033649);
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.app-dynamiccolor h2 {
+  background: linear-gradient(200deg, #FF3B30, #FF9500, #FFCC00, #34C759, #5AC8FA, #007AFF, #AF52DE);
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.app-desc {
+  color: black;
+  font-size: 0.8em;
+  letter-spacing: 0.08em;
+}
+
+body > footer .column {
+  font-size: 0.7em;
+  justify-content: center;
+}
+
+.privacy-block .column {
+  justify-content: start;
+  align-items: flex-start;
+  flex-flow: column wrap;
+}
