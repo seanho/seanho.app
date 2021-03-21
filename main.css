@@ -32,13 +32,28 @@ body > header, body > footer, .app {
 
 .column {
   height: 100%;
-  max-width: 480px;
+  max-width: 500px;
   margin: 0 auto;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
   padding: 0 1em;
+}
+
+.column :first-child {
+  flex-shrink: 0;
+}
+
+body > footer .column {
+  font-size: 0.7em;
+  justify-content: center;
+}
+
+.privacy-block .column {
+  justify-content: start;
+  align-items: flex-start;
+  flex-flow: column wrap;
 }
 
 .app {
@@ -91,7 +106,8 @@ body > header, body > footer, .app {
 }
 
 .app-dynamiccolor h2 {
-  background: linear-gradient(200deg, #FF3B30, #FF9500, #FFCC00, #34C759, #5AC8FA, #007AFF, #AF52DE);
+  --rotation: 200deg;
+  background: linear-gradient(var(--rotation), #FF3B30, #FF9500, #FFCC00, #34C759, #5AC8FA, #007AFF, #AF52DE);
   -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -100,15 +116,5 @@ body > header, body > footer, .app {
   color: black;
   font-size: 0.8em;
   letter-spacing: 0.08em;
-}
-
-body > footer .column {
-  font-size: 0.7em;
-  justify-content: center;
-}
-
-.privacy-block .column {
-  justify-content: start;
-  align-items: flex-start;
-  flex-flow: column wrap;
+  text-align: right;
 }
