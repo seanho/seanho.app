@@ -89,7 +89,7 @@ body > footer .column {
 	-webkit-text-fill-color: transparent;
 }
 
-.app-graphite h2::after, .app-rocketweather h2::after {
+.app-rocketweather h2::after {
   content: "Coming Soon";
   -webkit-text-fill-color: black;
   font-size: 0.3em;
