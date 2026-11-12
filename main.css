@@ -21,7 +21,7 @@ a, a:visited {
 }
 
 body > header, body > footer, .app {
-  height: 14.2857vh;
+  height: 12.5vh;
   min-height: 65px;
   width: vw;
 }
@@ -71,6 +71,12 @@ body > footer .column {
   position: relative;
 }
 
+.app-maptro h2 {
+  background: linear-gradient(105deg, #D7122F 0 14.3%, #F7A90F 0 28.6%, #EFC800 0 42.9%, #43A3DB 0 57.1%, #2F9642 0 71.4%, #E84AAE 0 85.7%, #24508C 0);
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 .app-2cents h2 {
   background: linear-gradient(to bottom, #16F54E, #3FD1FF);
   -webkit-background-clip: text;
@@ -89,7 +95,7 @@ body > footer .column {
 	-webkit-text-fill-color: transparent;
 }
 
-.app-rocketweather h2::after {
+.app-maptro h2::after, .app-rocketweather h2::after {
   content: "Coming Soon";
   -webkit-text-fill-color: black;
   font-size: 0.3em;
@@ -117,4 +123,15 @@ body > footer .column {
   font-size: 0.8em;
   letter-spacing: 0.08em;
   text-align: right;
+}
+
+.app-links {
+  display: block;
+  margin-top: 0.4em;
+  font-size: 0.85em;
+  color: #666;
+}
+
+.app-links a {
+  text-decoration: underline;
 }
